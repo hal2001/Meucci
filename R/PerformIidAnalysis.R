@@ -53,8 +53,8 @@ PerformIidAnalysis = function( Dates = dim( Data)[1], Data, Str = "")
 
 	X = Data[ 1 : length(Data)-1 ];
 	Y = Data[ 2 : length(Data) ];
-    par(pty = "s");
-    plot(X, Y, main = "Location-Dispersion Ellipsoid", asp = 1);
+    	par(pty = "s");
+    	plot(X, Y, main = "Location-Dispersion Ellipsoid", asp = 1);
 
 	m = cbind( apply( cbind( X, Y ), 2, mean ));
 	S = cov( cbind( X, Y ));
